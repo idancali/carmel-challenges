@@ -1,0 +1,5 @@
+{
+  "summary": "Start learning how to manipulate simple text",
+  "category": ["javascript", "json", "web"],
+  "taskIds": ["changeMenuTitle", "changeIntroTitle", "changeIntroSubtitle"]
+}
