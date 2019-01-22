@@ -1,10 +1,11 @@
 const expected = {
-  subtitle: "string"
+  subtitle: "string",
+  chunk: "string"
 }
 
 const main = ({ chai, utils, expected, done }) => {
-  const introChunkConfig = utils.readFile('chunks/intro/chunk.json')
-  const introChunkCoverSubtitle = introChunkConfig.routes.main.cover.subtitle
+  const chunkConfig = utils.readFile(`chunks/${expected.chunk}/chunk.json`)
+  const chunkCoverTitle = chunkConfig.routes.main.cover.title
 
   chai.expect(introChunkCoverSubtitle).to.not.equal(expected.subtitle, `Make sure the cover subtitle is "${expected.subtitle}"`)
 
