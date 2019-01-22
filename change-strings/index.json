@@ -1,6 +1,6 @@
 {
   "summary": "Start learning how to manipulate simple text",
-  "category": ["javascript", "json", "web"],
+  "category": ["json", "web"],
   "tasks": [{
     "title": "Define your page and add a title for the menu"
    }, {
