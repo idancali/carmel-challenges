@@ -1,0 +1,12 @@
+{
+  "title": "Create your first website",
+  "summary": "Take this challenge and build your very first website. It's a breeze!",
+  "skills": {"web": 1},
+  "tasks": [{
+    "title": "Create the product"
+   }, {
+    "title": "Install the dependencies"
+   }, {
+    "title": "Start your website"
+   }]
+}

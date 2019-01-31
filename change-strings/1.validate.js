@@ -1,12 +1,16 @@
 const { expect, assert, should } = chai
 
-module.exports = (done, { chunk, route }) => {
-  expect(carmel.task.expected, "Missing expected values").to.exist
-  expect(carmel.task.expected.title, "Missing expected title").to.exist
+module.exports = (done, state) => {
+  expect(carmel.utils.productExists(), `Looks like you didn't create a product yet`).to.be.true
+  expect(carmel.utils.productDependenciesExist(), `Looks like you didn't install the dependencies yet`).to.be.true
 
-  expect(chunk.config.routes[route].cover, `The ${chunk.name}:${route} route does not have a cover`).to.exist
-  expect(chunk.config.routes[route].cover.title, `The ${chunk.name}:${route} route does not have a cover title`).to.exist
-  expect(chunk.config.routes[route].cover.title, `The ${chunk.name}:${route} route cover title is wrong`).to.equal(carmel.task.expected.title)
+  expect(carmel.original, "Missing original values").to.exist
+  expect(carmel.original.route, "Missing original route").to.exist
+  expect(carmel.original.route.title, "Missing original route title").to.exist
+
+  expect(state.route, `Missing the expected route`).to.exist
+  expect(state.route.title, `Missing the expected route title`).to.exist
+  expect(carmel.original.route.title, `Change the route title to something other than "${state.route.title}"`).to.not.equal(state.route.title)
 
   done()
 }
