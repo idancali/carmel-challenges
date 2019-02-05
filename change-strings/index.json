@@ -3,8 +3,7 @@
   "summary": "Changing simple text is fundamental to coding. In this challenge, learn to manipulate simple text with ease.",
   "skills": {"json": 1, "web": 1, "text": 1, "strings": 1},
   "prerequisites": [{
-    "challenges": ["create-your-first-product"],
-    "message": "This challenges assumes you already created a product and installed its dependencies"
+    "message": "This challenge assumes you already created a product and installed its dependencies"
   }],
   "tasks": [{
      "title": "Start your website",

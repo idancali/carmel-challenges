@@ -1,0 +1,16 @@
+{
+  "title": "Start working with images",
+  "summary": "This challenge shows you how to change your website images, including logo and cover image",
+  "skills": {"json": 1, "web": 1, "images": 1},
+  "prerequisites": [{
+    "message": "This challenge assumes you already created a product and installed its dependencies"
+  }],
+  "tasks": [{
+     "title": "Start your website",
+     "stopTimer": true
+    },{
+    "title": "Change the cover image"
+   }, {
+     "title": "Change site logo"
+   }]
+}
