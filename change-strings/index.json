@@ -6,9 +6,6 @@
     "message": "This challenge assumes you already created a product and installed its dependencies"
   }],
   "tasks": [{
-     "title": "Start your website",
-     "stopTimer": true
-    },{
     "title": "Change a page title",
     "files": ["chunks/{{chunkName}}/chunk.json"]
    }, {
